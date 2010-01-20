@@ -21,6 +21,7 @@ div#content {
     margin:0 0 0 200px;
     padding: 25px 0;
     border-right: 1px solid #ccc;
+    text-align: left;
 }
 
 div.sidebar {
@@ -48,6 +49,24 @@ div#footer {
 clear:both;
 width:100%;
 }
+
+/* Main setup */
+
+body {
+    background: #fff;
+    margin: 0;
+    text-align: center;
+    font-family: Helvetica, Verdana arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    }
+
+#screen {
+    width 790px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    }
 
 /* Just some example content */
 div.skip-link {
@@ -215,7 +234,6 @@ width:7em;
 
 div.sidebar li {
 list-style:none;
-margin:0 0 2em;
 }
 
 div.sidebar li form {
@@ -224,12 +242,12 @@ padding:0;
 }
 
 div.sidebar ul ul {
-margin:0 0 0 1em;
-}
+    margin: 5px 0 0 10px;
+    }
 
 div.sidebar ul ul li {
-list-style:disc;
-margin:0;
+    margin 3px 0 0;
+    padding: 0;
 }
 
 div.sidebar ul ul ul {
@@ -239,6 +257,13 @@ margin:0 0 0 0.5em;
 div.sidebar ul ul ul li {
 list-style:circle;
 }
+
+#sidebar ul li a:hover {
+    background: #F0FF7E;
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+    }
+
 
 div#menu ul li,div.gallery dl,div.navigation div.nav-previous {
 float:left;
