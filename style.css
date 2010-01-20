@@ -26,7 +26,6 @@ div#content {
 
 div.sidebar {
     float:left;
-    overflow:hidden;
     width:190px;
     margin: 25px 0;
     text-align: right;
@@ -54,21 +53,29 @@ width:100%;
 
 body {
     background: #fff;
-    margin: 0;
+    margin: 0 auto auto;
     text-align: center;
     font-family: Helvetica, Verdana arial, sans-serif;
     font-size: 14px;
     color: #333;
+    width: 790px;
     }
 
 #screen {
-    width 790px;
     margin: 0 auto;
+    width 790px;
     padding: 0;
     text-align: left;
     }
 
 /* Just some example content */
+
+h1#blogtitle {
+    font-family:"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: bold;
+    font-spacing: 0.04em;
+    font-height: 0.8em;
+   } 
 div.skip-link {
 position:absolute;
 right:1em;
@@ -79,7 +86,7 @@ div#menu {
 background:#EEE;
 height:1.5em;
 margin:1em 0;
-width:100%;
+/*width:100%;*/
 }
 
 div#menu ul,div#menu ul ul {
@@ -284,9 +291,10 @@ padding:0;
 
 /* Misc */
 
-* {
+/* * {
     font-weight: normal;
     }
+*/
 
 strong, b {
     font-weight: bold;
