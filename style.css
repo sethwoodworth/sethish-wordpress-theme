@@ -82,6 +82,7 @@ top:1em;
 clear:both;
 }
 
+
 div#container,div#primary {
     /*margin-top:2em;
     amount of space between content and menu bar
@@ -293,6 +294,10 @@ div#entry-content a {
     text-decoration: none;
     }
 
+.comments-link {
+    float: right;
+    margin-right: 10px;
+    }
 
 /* my header edits */
 
