@@ -26,18 +26,19 @@ div#content {
 
 div.sidebar {
     float:left;
+    background: url('img/back_pages.gif') no-repeat top right;
     width:190px;
     margin: 25px 0;
     text-align: right;
     }
 
-#sidebar ul li.pagenav {
-    background: url('img/back_pages.gif') no-repeat top right;
+/* #sidebar ul li.pagenav {
     margin-top: 15px;
     margin-right: -10px;
     padding: 10px;
     border-bottom: 1px solid #eee;
     }
+*/
 
 
 div#secondary {
@@ -70,58 +71,21 @@ body {
 
 /* Just some example content */
 
-h1#blogtitle {
-    font-family:"Helvetica Neue",Helvetica,sans-serif;
-    font-weight: bold;
-    font-spacing: 0.04em;
-    font-height: 0.8em;
-   } 
 div.skip-link {
 position:absolute;
 right:1em;
 top:1em;
 }
 
-div#menu {
-background:#EEE;
-height:1.5em;
-margin:1em 0;
-/*width:100%;*/
-}
-
-div#menu ul,div#menu ul ul {
-line-height:1;
-list-style:none;
-margin:0;
-padding:0;
-}
-
-div#menu ul a {
-display:block;
-margin-right:1em;
-padding:0.2em 0.5em;
-text-decoration:none;
-}
-
-div#menu ul ul ul a {
-font-style:italic;
-}
-
-div#menu ul li ul {
-left:-999em;
-position:absolute;
-}
-
-div#menu ul li:hover ul {
-left:auto;
-}
 
 .entry-title,.entry-meta {
 clear:both;
 }
 
 div#container,div#primary {
-margin-top:2em;
+    /*margin-top:2em;
+    amount of space between content and menu bar
+    */
 }
 
 form#commentform .form-label {
@@ -284,17 +248,12 @@ input#author,input#email,input#url,div.navigation div {
 width:50%;
 }
 
-div.gallery *,div.sidebar div,div.sidebar h3,div.sidebar ul {
+div.gallery *, div.sidebar div {
 margin:0;
 padding:0;
 }
 
 /* Misc */
-
-/* * {
-    font-weight: normal;
-    }
-*/
 
 strong, b {
     font-weight: bold;
@@ -310,3 +269,95 @@ input#submit {
     color: #990012;
     }
 
+/* my universal edits */
+
+a {
+    color: #330600;
+    text-decoration: none;
+    }
+
+a:active, a:hover {
+    color: #0022aa;
+    }
+
+/* content/universal(?) edits */
+
+h2 a {
+    color: #666666;
+    text-decoration: none;
+}
+
+
+div#entry-content a {
+    color: #000;
+    text-decoration: none;
+    }
+
+
+/* my header edits */
+
+body h1 {
+    font-family:"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: bold;
+    font-spacing: 0.04em;
+    font-height: 0.8em;
+   } 
+
+#blogtitle a {
+    color: #000000;
+    text-decoration: none;
+    }
+
+#blogtitle a:active, #blogtitle a:hover {
+    color: #0022aa;
+    }
+
+/* menu edits */
+
+div#menu {
+    background:#EEE;
+    height:1.5em;
+    margin: 14px 0 0 0;
+}
+
+div#menu ul,div#menu ul ul {
+line-height:1;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+div#menu ul a {
+display:block;
+margin-right:1em;
+padding:0.2em 0.5em;
+text-decoration:none;
+}
+
+div#menu ul ul ul a {
+font-style:italic;
+}
+
+div#menu ul li ul {
+left:-999em;
+position:absolute;
+}
+
+div#menu ul li:hover ul {
+left:auto;
+}
+
+
+/* sidebar */
+div.sidebar ul {
+}
+
+div.sidebar a {
+    color: #333;
+    text-decoration: underline;
+    }
+
+div.sidevar a:hover {
+    text-decoration: overline;
+    color: #0022aa;
+    }
